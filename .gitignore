@@ -4,7 +4,6 @@ node_modules/
 .env.*
 screenshots/
 artifacts/
-x-kit/
 attachments/
 public/rexjet/
 *.log
