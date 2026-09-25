@@ -1,0 +1,15 @@
+node_modules/
+.vercel/
+.env
+.env.*
+screenshots/
+artifacts/
+x-kit/
+attachments/
+public/rexjet/
+*.log
+.grok/preview.pid
+.grok/preview.log
+.grok/og-pending
+.vercel
+.env*

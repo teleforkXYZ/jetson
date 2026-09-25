@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sun: #ffe14a;
+  --color-ink: #1c1408;
+  --color-lime: #b6f25c;
+  --color-coral: #ff5d3a;
+  --color-sky: #3ec6ff;
+  --font-sans: "Fredoka", "Avenir Next", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --radius-board: 1.75rem;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  html,
+  body {
+    margin: 0;
+    min-height: 100dvh;
+    background: var(--color-sun);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+}
+
+@keyframes hop {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes ticker {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@utility hop {
+  animation: hop 1.5s ease-in-out infinite;
+}
+
+@utility ticker {
+  animation: ticker 18s linear infinite;
+}
