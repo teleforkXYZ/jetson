@@ -104,6 +104,15 @@ function Home() {
           <p className="m-0 text-lg">No coin contract yet.</p>
         </div>
       </section>
+
+      <footer className="flex flex-wrap items-center justify-between gap-3 border-t-4 border-ink px-5 py-4 font-mono text-sm sm:px-8">
+        <a href={site.x} className="text-ink underline">
+          X · @{site.xHandle}
+        </a>
+        <a href={site.paper} className="text-ink underline">
+          Paper
+        </a>
+      </footer>
     </main>
   );
 }

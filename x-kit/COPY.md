@@ -1,6 +1,6 @@
 # X
 
-Handle: @jetsonLOL
+Handle: @jetsonRH
 Name: Jetson
 Website: https://www.jetson.lol
 Bio: The little computer. One camera eye, a mouth of pins, arms made of wire.
@@ -29,6 +29,8 @@ The wires are three. Pink, blue, yellow. They carry a signal, not a coin.
 
 Six bays stay empty for a later module. The coin address stays empty until the launch.
 
+Paper: https://github.com/NVIDIA-AI-IOT/jetbot
+
 ## Posts
 
 1. x-post-boot.jpg
@@ -36,6 +38,7 @@ Jetson. The little computer.
 One camera eye, a mouth of pins, arms made of wire.
 3× NVDAx3L. Not NVIDIA’s site.
 jetson.lol
+Paper: https://github.com/NVIDIA-AI-IOT/jetbot
 
 2. x-post-bus.jpg
 Five modules. One bus.

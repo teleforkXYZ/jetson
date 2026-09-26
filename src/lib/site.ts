@@ -9,4 +9,7 @@ export const site = {
   pairUrl: "https://app.long.xyz/longx/0xF51fb54DE60f6e16252E852A5Ed0E60B8307606A",
   line: "The little computer.",
   contract: null,
+  x: "https://x.com/jetsonRH",
+  xHandle: "jetsonRH",
+  paper: "https://github.com/NVIDIA-AI-IOT/jetbot",
 } as const;
