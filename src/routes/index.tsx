@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { Board } from "@/components/board";
 import { Machine } from "@/components/machine";
 import { site } from "@/lib/site";
@@ -29,7 +29,9 @@ function Home() {
           />
           ${site.ticker}
         </p>
-        <p className="m-0 font-mono text-sm">{site.domain}</p>
+        <Link to="/how" className="font-mono text-sm text-ink underline">
+          How
+        </Link>
       </header>
 
       <div className="overflow-hidden border-b-4 border-ink bg-lime">
