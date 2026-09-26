@@ -29,6 +29,20 @@ function Home() {
         </p>
       </div>
 
+      <section className="border-b-4 border-ink bg-coral px-5 py-6 sm:px-8">
+        <p className="m-0 font-mono text-sm tracking-widest uppercase">CA</p>
+        {site.contract ? (
+          <a
+            href={`${site.scan}${site.contract}`}
+            className="mt-2 block font-mono text-xl break-all text-ink sm:text-3xl"
+          >
+            {site.contract}
+          </a>
+        ) : (
+          <p className="m-0 mt-2 font-mono text-4xl">—</p>
+        )}
+      </section>
+
       <section className="mx-auto grid max-w-5xl items-center gap-8 px-5 py-8 sm:px-8 sm:py-12 lg:grid-cols-2">
         <div className="grid gap-4">
           <p className="m-0 w-fit rounded-full bg-sky px-3 py-1 font-mono text-sm">
@@ -86,11 +100,6 @@ function Home() {
         <a href={site.pairUrl} className="w-fit font-sans text-lg underline">
           {site.pair} on {site.pad}
         </a>
-        <div className="rounded-board border-4 border-ink p-4">
-          <p className="m-0 font-mono text-sm tracking-widest uppercase">Contract</p>
-          <p className="m-0 mt-2 font-mono text-lg">—</p>
-          <p className="m-0 text-lg">No coin contract yet.</p>
-        </div>
         <div className="grid gap-2">
           {site.modules.map((mod) => (
             <a
@@ -103,7 +112,7 @@ function Home() {
             </a>
           ))}
         </div>
-        <p className="m-0 text-lg">Five seats are filled. The coin slot stays empty.</p>
+        <p className="m-0 text-lg">Five seats are filled. The coin is the coral bar.</p>
       </section>
 
       <footer className="flex flex-wrap items-center justify-between gap-3 border-t-4 border-ink px-5 py-4 font-mono text-sm sm:px-8">
