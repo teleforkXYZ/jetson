@@ -1,6 +1,6 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { Board } from "@/components/board";
-import { Machine } from "@/components/machine";
+import { SiteHeader } from "@/components/header";
 import { site } from "@/lib/site";
 
 export const Route = createFileRoute("/")({ component: Home });
@@ -20,19 +20,7 @@ const BOARDS = [
 function Home() {
   return (
     <main className="min-h-dvh bg-sun text-ink">
-      <header className="flex items-center justify-between gap-4 border-b-4 border-ink px-5 py-4 sm:px-8">
-        <p className="m-0 flex items-center gap-3 font-sans text-2xl">
-          <img
-            src="/jetson/icon.jpg"
-            alt=""
-            className="h-12 w-12 rounded-2xl border-4 border-ink object-cover"
-          />
-          ${site.ticker}
-        </p>
-        <Link to="/how" className="font-mono text-sm text-ink underline">
-          How
-        </Link>
-      </header>
+      <SiteHeader />
 
       <div className="overflow-hidden border-b-4 border-ink bg-lime">
         <p className="ticker m-0 w-max py-2 font-mono text-sm whitespace-nowrap">
@@ -86,8 +74,6 @@ function Home() {
         alt="Jetson mid-jump, wheels up, pink blue and yellow wires in the air"
         className="aspect-video w-full border-y-4 border-ink object-cover"
       />
-
-      <Machine />
 
       <section className="mx-auto grid max-w-3xl gap-3 px-5 py-8 sm:px-8">
         <h2 className="m-0 font-mono text-sm tracking-widest uppercase">The record</h2>

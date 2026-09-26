@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { site } from "@/lib/site";
+import { SiteHeader } from "@/components/header";
 
 export const Route = createFileRoute("/how")({ component: How });
 
@@ -37,19 +37,7 @@ const STEPS = [
 function How() {
   return (
     <main className="min-h-dvh bg-sun text-ink">
-      <header className="flex items-center justify-between gap-4 border-b-4 border-ink px-5 py-4 sm:px-8">
-        <Link to="/" className="m-0 flex items-center gap-3 font-sans text-2xl text-ink">
-          <img
-            src="/jetson/icon.jpg"
-            alt=""
-            className="h-12 w-12 rounded-2xl border-4 border-ink object-cover"
-          />
-          ${site.ticker}
-        </Link>
-        <Link to="/" className="font-mono text-sm text-ink underline">
-          Home
-        </Link>
-      </header>
+      <SiteHeader />
 
       <section className="border-b-4 border-ink px-5 py-10 sm:px-8">
         <p className="m-0 font-mono text-sm tracking-widest uppercase">How</p>
@@ -74,7 +62,7 @@ function How() {
           You hold it. That is the part. You do not have to press anything to keep it.
         </p>
         <p className="m-0 max-w-2xl text-xl leading-snug">
-          If you want to play, you do not need the coin. On this site, press Boot. On Robinhood Chain, call boot, wait, then infer. After that you can take a pin, send a wire, or give the eye a hash.
+          If you want to play, you do not need the coin. Open Bus. Press boot, then infer. After that you can take a pin, send a wire, or give the eye a hash. The buttons there are a rehearsal. They do not send a transaction.
         </p>
         <p className="m-0 max-w-2xl text-xl leading-snug">
           Seat, bind, and lock are not a holder’s job. Those stay with the wallet that deployed the bus. The coin address is still empty.
