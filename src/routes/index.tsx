@@ -115,7 +115,7 @@ function Home() {
             </a>
           ))}
         </div>
-        <p className="m-0 text-lg">Deployed on Robinhood Chain. Seats are still open. The coin slot stays empty.</p>
+        <p className="m-0 text-lg">Five seats are filled. The coin slot stays empty.</p>
       </section>
 
       <footer className="flex flex-wrap items-center justify-between gap-3 border-t-4 border-ink px-5 py-4 font-mono text-sm sm:px-8">
