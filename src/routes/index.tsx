@@ -9,19 +9,26 @@ const TICK =
   `$JETSON  ·  ${site.domain}  ·  ${site.multiple} ${site.pair}  ·  the little computer  ·  `;
 
 const BOARDS = [
-  { src: "/jetson/down.jpg", title: "Down", body: "Shutter closed. The header can clear." },
-  { src: "/jetson/pins.jpg", title: "Pins", body: "The grin is a header. Two of them pulse." },
-  { src: "/jetson/pwm.jpg", title: "Boot", body: "Lamps on. Arms are still just wire." },
-  { src: "/jetson/csi.jpg", title: "Eye", body: "One camera, one ribbon." },
-  { src: "/jetson/infer.jpg", title: "Infer", body: "The ring means the eye is recording." },
-  { src: "/jetson/carrier.jpg", title: "Carrier", body: "Pink, blue, yellow, plugged in." },
+  { src: "/jetson/mark.jpg", title: "Mark", body: "The logo. Camera, pins, three wires." },
+  { src: "/jetson/sleepy.jpg", title: "Down", body: "Shutter low. The wires go slack." },
+  { src: "/jetson/wave.jpg", title: "Boot", body: "Pink waves. Blue and yellow follow." },
+  { src: "/jetson/scan.jpg", title: "Infer", body: "The ring means the eye is recording." },
+  { src: "/jetson/hop.jpg", title: "Jump", body: "Wheels up. The wires go with them." },
+  { src: "/jetson/icon.jpg", title: "Face", body: "Small enough for a tab. Same eye." },
 ];
 
 function Home() {
   return (
     <main className="min-h-dvh bg-sun text-ink">
       <header className="flex items-center justify-between gap-4 border-b-4 border-ink px-5 py-4 sm:px-8">
-        <p className="m-0 font-sans text-2xl">${site.ticker}</p>
+        <p className="m-0 flex items-center gap-3 font-sans text-2xl">
+          <img
+            src="/jetson/icon.jpg"
+            alt=""
+            className="h-12 w-12 rounded-2xl border-4 border-ink object-cover"
+          />
+          ${site.ticker}
+        </p>
         <p className="m-0 font-mono text-sm">{site.domain}</p>
       </header>
 
@@ -73,8 +80,8 @@ function Home() {
       </section>
 
       <img
-        src="/jetson/carrier.jpg"
-        alt="Jetson carrier board, one camera, a pin header, and three wire arms"
+        src="/jetson/hop.jpg"
+        alt="Jetson mid-jump, wheels up, pink blue and yellow wires in the air"
         className="aspect-video w-full border-y-4 border-ink object-cover"
       />
 

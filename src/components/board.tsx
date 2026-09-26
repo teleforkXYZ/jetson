@@ -9,20 +9,20 @@ const LAMPS = [
 
 const ART: Record<Power, { src: string; alt: string }> = {
   idle: {
-    src: "/jetson/idle.jpg",
-    alt: "Jetson standing, one camera eye open",
+    src: "/jetson/mark.jpg",
+    alt: "Jetson logo, a small green computer with one camera and a pin smile",
   },
   boot: {
-    src: "/jetson/boot.jpg",
-    alt: "Jetson with its lamps lit and wires in the air",
+    src: "/jetson/wave.jpg",
+    alt: "Jetson waving, pink blue and yellow wires out",
   },
   infer: {
-    src: "/jetson/infer.jpg",
-    alt: "Jetson inferring, a ring lit inside the camera eye",
+    src: "/jetson/scan.jpg",
+    alt: "Jetson inferring, a ring lit around the camera",
   },
   down: {
-    src: "/jetson/down.jpg",
-    alt: "Jetson powered down, camera shutter closed",
+    src: "/jetson/sleepy.jpg",
+    alt: "Jetson powered down, camera shutter low, wires slack",
   },
 };
 
