@@ -103,6 +103,19 @@ function Home() {
           <p className="m-0 mt-2 font-mono text-lg">—</p>
           <p className="m-0 text-lg">No coin contract yet.</p>
         </div>
+        <div className="grid gap-2">
+          {site.modules.map((mod) => (
+            <a
+              key={mod.name}
+              href={`${site.scan}${mod.address}`}
+              className="grid gap-1 rounded-board border-4 border-ink p-3 text-ink"
+            >
+              <span className="font-sans text-lg">{mod.name}</span>
+              <span className="font-mono text-sm break-all">{mod.address}</span>
+            </a>
+          ))}
+        </div>
+        <p className="m-0 text-lg">Deployed on Robinhood Chain. Seats are still open. The coin slot stays empty.</p>
       </section>
 
       <footer className="flex flex-wrap items-center justify-between gap-3 border-t-4 border-ink px-5 py-4 font-mono text-sm sm:px-8">
