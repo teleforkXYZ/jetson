@@ -6,7 +6,7 @@ import { site } from "@/lib/site";
 export const Route = createFileRoute("/")({ component: Home });
 
 const TICK =
-  `$JETSON  ·  ${site.domain}  ·  ${site.multiple} ${site.pair}  ·  the little computer  ·  `;
+  `$JETSON  ·  one camera  ·  a mouth of pins  ·  pink blue yellow  ·  ${site.multiple} ${site.pair}  ·  five seats filled  ·  the coin is the coral bar  ·  hold it  ·  play the bus  ·  not NVIDIA’s site  ·  ${site.domain}  ·  `;
 
 const BOARDS = [
   { src: "/jetson/mark.jpg", title: "Mark", body: "The logo. Camera, pins, three wires." },
