@@ -7,6 +7,7 @@ export const site = {
   pairUrl: "https://www.letscash.fun/token/0x98021c5cfcae13b9a8db756544bd8e77df06f7cc",
   line: "The little computer.",
   contract: "0x98021c5cfcae13b9a8db756544bd8e77df06f7cc",
+  bus: "0xC04cb789b57fD9cCc826f2740aCAe64F202Ce6E9",
   scan: "https://robinhoodchain.blockscout.com/address/",
   x: "https://x.com/jetsonRH",
   xHandle: "jetsonRH",

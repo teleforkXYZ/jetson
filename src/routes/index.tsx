@@ -98,7 +98,11 @@ function Home() {
         <a href={site.pairUrl} className="w-fit font-sans text-lg underline">
           {site.pad}
         </a>
-        <p className="m-0 text-lg">The coral bar is the CA. Bus, pins, and the eye stay on this page. They are not on chain.</p>
+        <p className="m-0 text-lg">The coral bar is the CA. The bus is bound and locked.</p>
+        <a href={`${site.scan}${site.bus}`} className="grid gap-1 rounded-board border-4 border-ink p-3 text-ink">
+          <span className="font-sans text-lg">Bus</span>
+          <span className="font-mono text-sm break-all">{site.bus}</span>
+        </a>
       </section>
 
       <footer className="flex flex-wrap items-center justify-between gap-3 border-t-4 border-ink px-5 py-4 font-mono text-sm sm:px-8">

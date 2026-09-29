@@ -65,7 +65,7 @@ function How() {
           If you want to play, you do not need the coin. Open Bus. Press boot, then infer. After that you can take a pin, send a wire, or give the eye a hash. The buttons there are a rehearsal. They do not send a transaction.
         </p>
         <p className="m-0 max-w-2xl text-xl leading-snug">
-          The coin address is the coral bar on the home page. Launch is on letscash.fun.
+          The coin address is the coral bar on the home page. The bus is bound and locked. Launch is on letscash.fun.
         </p>
         <Link to="/" className="w-fit font-sans text-lg underline">
           Back to the machine
