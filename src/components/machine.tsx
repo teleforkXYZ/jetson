@@ -33,7 +33,7 @@ export function Machine() {
       <div className="mx-auto grid w-full max-w-5xl gap-2">
         <h2 className="m-0 font-mono text-sm tracking-widest uppercase">The bus</h2>
         <p className="m-0 max-w-2xl text-xl leading-snug">
-          One carrier, five modules. This page is a rehearsal of the contracts. It does not take a fee, and the coin slot stays empty.
+          One carrier, five toys. This page is a rehearsal. It does not take a fee, and the coin slot stays empty.
         </p>
       </div>
 

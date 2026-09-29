@@ -8,14 +8,14 @@ const STEPS = [
     bg: "bg-coral",
     src: "/jetson/how-coin.jpg",
     title: "Hold it",
-    body: "Holding Jetson is the coin. There is no claim, no fee, and no vault. The bus does not look at your balance.",
+    body: "Holding Jetson is the coin. The bus does not look at your balance.",
     alt: "The little computer beside a blank coin",
   },
   {
     bg: "bg-sun",
     src: "/jetson/wave.jpg",
     title: "Boot",
-    body: "Anyone can flip the board. Idle, boot, infer, power down. On the chain there are thirty seconds between flips. The buttons on the home page are a rehearsal. They are faster, and they do not send a transaction.",
+    body: "Anyone can flip the board. Idle, boot, infer, power down. The buttons are a rehearsal. They do not send a transaction.",
     alt: "Jetson waving, lamps on",
   },
   {
@@ -65,7 +65,7 @@ function How() {
           If you want to play, you do not need the coin. Open Bus. Press boot, then infer. After that you can take a pin, send a wire, or give the eye a hash. The buttons there are a rehearsal. They do not send a transaction.
         </p>
         <p className="m-0 max-w-2xl text-xl leading-snug">
-          Seat, bind, and lock are not a holder’s job. Those stay with the wallet that deployed the bus. The coin address is the coral bar on the home page.
+          The coin address is the coral bar on the home page. Launch is on letscash.fun.
         </p>
         <Link to="/" className="w-fit font-sans text-lg underline">
           Back to the machine

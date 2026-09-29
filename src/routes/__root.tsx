@@ -13,7 +13,7 @@ export const Route = createRootRoute({
       { title: APP_NAME },
       {
         name: "description",
-        content: "Jetson. The little computer. Paired 3× to NVDAx3L.",
+        content: "Jetson. The little computer. Launching on letscash.fun.",
       },
       { name: "theme-color", content: "#ffe14a" },
     ],

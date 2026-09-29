@@ -6,7 +6,7 @@ import { site } from "@/lib/site";
 export const Route = createFileRoute("/")({ component: Home });
 
 const TICK =
-  `$JETSON  ·  one camera  ·  a mouth of pins  ·  pink blue yellow  ·  ${site.multiple} ${site.pair}  ·  five seats filled  ·  the coin is the coral bar  ·  hold it  ·  play the bus  ·  not NVIDIA’s site  ·  ${site.domain}  ·  `;
+  `$JETSON  ·  one camera  ·  a mouth of pins  ·  pink blue yellow  ·  ${site.pair} on ${site.pad}  ·  hold it  ·  play the bus  ·  not NVIDIA’s site  ·  ${site.domain}  ·  `;
 
 const BOARDS = [
   { src: "/jetson/mark.jpg", title: "Mark", body: "The logo. Camera, pins, three wires." },
@@ -39,14 +39,14 @@ function Home() {
             {site.contract}
           </a>
         ) : (
-          <p className="m-0 mt-2 font-mono text-4xl">—</p>
+          <p className="m-0 mt-2 font-mono text-4xl">soon</p>
         )}
       </section>
 
       <section className="mx-auto grid max-w-5xl items-center gap-8 px-5 py-8 sm:px-8 sm:py-12 lg:grid-cols-2">
         <div className="grid gap-4">
           <p className="m-0 w-fit rounded-full bg-sky px-3 py-1 font-mono text-sm">
-            {site.multiple} {site.pair}
+            {site.pair} · {site.pad}
           </p>
           <h1 className="m-0 text-6xl leading-none sm:text-8xl">{site.name}</h1>
           <p className="m-0 max-w-md text-2xl leading-snug">
@@ -92,27 +92,13 @@ function Home() {
       <section className="mx-auto grid max-w-3xl gap-3 px-5 py-8 sm:px-8">
         <h2 className="m-0 font-mono text-sm tracking-widest uppercase">The record</h2>
         <p className="m-0 text-xl leading-snug">
-          NVIDIA makes a small computer called Jetson. This page is the coin, paired {site.multiple} to {site.pair} on{" "}
-          {site.pad}. It is not NVIDIA’s site.
+          NVIDIA makes a small computer called Jetson. This page is the coin. It launches on {site.pad}, paired to{" "}
+          {site.pair}. It is not NVIDIA’s site.
         </p>
-        <p className="m-0 font-mono text-sm break-all">LongX {site.vault}</p>
-        <p className="m-0 text-lg">That address is the pair, not the coin.</p>
         <a href={site.pairUrl} className="w-fit font-sans text-lg underline">
-          {site.pair} on {site.pad}
+          {site.pad}
         </a>
-        <div className="grid gap-2">
-          {site.modules.map((mod) => (
-            <a
-              key={mod.name}
-              href={`${site.scan}${mod.address}`}
-              className="grid gap-1 rounded-board border-4 border-ink p-3 text-ink"
-            >
-              <span className="font-sans text-lg">{mod.name}</span>
-              <span className="font-mono text-sm break-all">{mod.address}</span>
-            </a>
-          ))}
-        </div>
-        <p className="m-0 text-lg">Five seats are filled. The coin is the coral bar.</p>
+        <p className="m-0 text-lg">The coral bar is the CA. Bus, pins, and the eye stay on this page. They are not on chain.</p>
       </section>
 
       <footer className="flex flex-wrap items-center justify-between gap-3 border-t-4 border-ink px-5 py-4 font-mono text-sm sm:px-8">
